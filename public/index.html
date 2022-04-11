@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"
+		integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"" type=" text/javascript"
+		charset="utf-8"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="js/chart-device-data.js" type="text/javascript" charset="utf-8"></script>
+	<link href="css/style.css" rel="stylesheet" />
+
+	<title>Temperature &amp; Humidity Real-time Data</title>
+</head>
+
+<body>
+	<h1>
+		<span>Garden Fairy Dashboard</span>
+	</h1>
+	<h2 class="flexHeader">
+		<span style="display: none">
+            <span id="deviceCount">0 devices</span>
+            <select id="listOfDevices" class="select_box"></select>
+        </span>
+		<span>
+			<span id="deviceCount">Select Graph</span>
+			<select id="selectGraph" class="selectBox" onchange="selectGraph(this)">
+				<option value="all" default>All Graphs</option>
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+				<option value="6">Option 6</option>
+				<option value="7">Option 7</option>
+				<option value="8">Option 8</option>
+				<option value="9">Option 9</option>
+			</select>
+		</span>
+		<span class="constant-holder" id="constant-holder">
+			<span>
+				<div class="constant-data">
+					Last Watered: <Span class="ok">Yesterday</Span>
+				</div>
+			</span>
+			<span>
+				<div class="constant-data">
+					Health: <span class="good">95%</span>
+				</div>
+			</span>
+			<span>
+				<div class="constant-data">
+					Light: <span class="good">Good</span>
+				</div>
+			</span>
+			<span>
+				<div class="constant-data">
+					Temperature: <span class="bad">Bad</span>
+				</div>
+			</span>
+		</span>
+		<span id="time-selector">
+			<select id="selectTime" class="selectBox" onchange="selectTime(this)">
+				<option value="1" default>Day</option>
+				<option value="2">Week</option>
+				<option value="3">Month</option>
+			</select>
+		</span>
+		</h1>
+		<div class="canvas-holder">
+			<div class="canvas-wrapper" id="canvas-wrapper-1">
+				<canvas id="iotChart-1"></canvas>
+			</div>
+			<div class="canvas-wrapper" id="canvas-wrapper-2">
+				<canvas id="iotChart-2"></canvas>
+			</div>
+			<div class="canvas-wrapper" id="canvas-wrapper-3">
+				<canvas id="iotChart-3"></canvas>
+			</div>
+			<div class="canvas-wrapper" id="canvas-wrapper-4">
+				<canvas id="iotChart-4"></canvas>
+			</div>
+			<div class="canvas-wrapper" id="canvas-wrapper-5">
+				<canvas id="iotChart-5"></canvas>
+			</div>
+			<div class="canvas-wrapper" id="canvas-wrapper-6">
+				<canvas id="iotChart-6"></canvas>
+			</div>
+			<div class="canvas-wrapper" id="canvas-wrapper-7">
+				<canvas id="iotChart-7"></canvas>
+			</div>
+			<div class="canvas-wrapper" id="canvas-wrapper-8">
+				<canvas id="iotChart-8"></canvas>
+			</div>
+			<div class="canvas-wrapper" id="canvas-wrapper-9">
+				<canvas id="iotChart-9"></canvas>
+			</div>
+		</div>
+</body>
+
+</html>

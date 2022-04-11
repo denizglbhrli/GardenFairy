@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 50px;
+  margin: 0;
+  text-align: center;
+}
+
+.flexHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+a {
+  color: #00b7ff;
+}
+
+body select {
+  padding: 10px 70px 10px 13px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  background: url("https://i.ibb.co/b7xjLrB/selectbox-arrow.png") right center
+    no-repeat;
+  background-color: #fff;
+  color: #444444;
+  line-height: 16px;
+  appearance: none;
+  /* this is must */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+body .constant-data {
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #444444;
+  line-height: 16px;
+  appearance: none;
+  /* this is must */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+/* body select.select_box option */
+body select option {
+  padding: 0 4px;
+}
+
+/* for Edge */
+select::-ms-expand {
+  display: none;
+}
+
+select:disabled::-ms-expand {
+  background: #f60;
+}
+
+.canvas-holder {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* padding: 20px; */
+}
+
+.canvas-wrapper {
+  width: 30% !important;
+  height: 450px !important;
+}
+
+.canvas-active {
+  width: 100% !important;
+  height: 900px !important;
+}
+
+.canvas-wrapper canvas {
+  width: 100%;
+  height: 100%;
+  display: "block";
+}
+
+#time-selector {
+  display: none;
+}
+
+.time-selector-active {
+  display: block !important;
+}
+
+
+.good {
+	color: #2dc937;
+}
+
+.ok {
+	color: #e7b416;
+}
+
+.bad {
+	color: #cc3232;
+}
+
+.constant-holder {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-grow: 1;
+	padding-left: 50px;
+}
